@@ -42,13 +42,16 @@ async function onSubmit(event) {
   };
 
   // Fetching data from the API
-  let response = await fetch("http://localhost:5678/api/users/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-    body: JSON.stringify(user),
-  });
+  let response = await fetch(
+    "https://sophiebluel-1jgn.onrender.com/api/users/login",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(user),
+    }
+  );
 
   let result = await response.json();
 

@@ -1,8 +1,8 @@
 import { modalAlert } from "./login.js";
 
-const urlCategories = "http://localhost:5678/api/categories";
-const urlWorks = "http://localhost:5678/api/works";
-const urlLogin = "http://localhost:5678/api/users/login";
+const urlCategories = "https://sophiebluel-1jgn.onrender.com/api/categories";
+const urlWorks = "https://sophiebluel-1jgn.onrender.com/api/works";
+const urlLogin = "https://sophiebluel-1jgn.onrender.com/api/users/login";
 let selectedCategoryId = 0; // by default, display all works
 
 function deleteWorks() {
@@ -223,7 +223,7 @@ async function displayWorksModal() {
  * Delete works from the API
  */
 function deleteWorksData(id) {
-  fetch(`http://localhost:5678/api/works/${id}`, {
+  fetch(`https://sophiebluel-1jgn.onrender.com/api/works/${id}`, {
     method: "DELETE",
     headers: {
       "content-type": "application/Json",
