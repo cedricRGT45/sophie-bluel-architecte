@@ -1,0 +1,66 @@
+#login,
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 23.68rem;
+}
+
+#login {
+  width: 100%;
+  margin-top: 9.38rem;
+  margin-bottom: 22rem;
+}
+
+
+#login a {
+  text-decoration: underline;
+}
+
+.modal__login {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+dialog[open] {
+  animation: skewX 300ms forwards;
+}
+
+/*animation*/
+@keyframes skewX {
+  0% {
+    transform: skewX(-20deg);
+    background: white;
+  }
+  5% {
+    transform: skewX(20deg);
+    background: #b1663c;
+  }
+  10% {
+    transform: skewX(-25deg);
+    background: white;
+  }
+  15% {
+    transform: skewX(25deg);
+    background: #b1663c;
+  }
+  20% {
+    transform: skewX(-15deg);
+    background: white;
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
