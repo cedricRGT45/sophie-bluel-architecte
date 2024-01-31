@@ -63,8 +63,10 @@ async function onSubmit(event) {
   } else if (response.status === 404 || response.status === 401) {
     form.email.value = "";
     form.password.value = "";
-    modalAlert("Ceci est un site dans le cadre d'une formation de développeur web. Pour accéder aux fonctionnalités ouvrez la console")
-    console.log("mail: sophie.bluel@test.tld password: S0phie")
+    modalAlert(
+      "Ceci est un site développé dans le cadre d'une formation de développeur web. Pour accéder aux fonctionnalités ouvrez la console"
+    );
+    console.log("mail: sophie.bluel@test.tld password: S0phie");
   }
 }
 

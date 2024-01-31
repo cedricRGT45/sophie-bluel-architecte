@@ -107,9 +107,9 @@ function filterWorks() {
  */
 function displayAdminMode() {
   if (sessionStorage.getItem("token")) {
-    const favicon = document.getElementById("favicon")
-    favicon.href = "./assets/icons/favicon-logIn.ico"
-    console.log(favicon)
+    const favicon = document.getElementById("favicon");
+    favicon.href = "./assets/icons/favicon-logIn.ico";
+    console.log(favicon);
 
     // Display the logout button
     const login = document.querySelector("#login");
@@ -613,8 +613,8 @@ document.addEventListener("click", function (event) {
     const formAddWorks = document.querySelector(".form-add-works");
     if (formAddWorks.checkValidity()) {
       sendData();
-      updateGallery();
       goBackModal();
+      updateGallery();
     }
   }
 });
