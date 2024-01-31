@@ -107,6 +107,10 @@ function filterWorks() {
  */
 function displayAdminMode() {
   if (sessionStorage.getItem("token")) {
+    const favicon = document.getElementById("favicon")
+    favicon.href = "./assets/icons/favicon-logIn.ico"
+    console.log(favicon)
+
     // Display the logout button
     const login = document.querySelector("#login");
     login.textContent = "Log out";
