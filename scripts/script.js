@@ -5,6 +5,12 @@ const urlWorks = "https://sophiebluel-1jgn.onrender.com/api/works";
 const urlLogin = "https://sophiebluel-1jgn.onrender.com/api/users/login";
 let selectedCategoryId = 0; // by default, display all works
 
+function modalIntro() {
+  const modalIntro = document.createElement("dialog");
+  modalIntro =  modalAlert("Photo ajoutée avec succés");
+  console.log(modalIntro)
+document.appendChild(modalIntro)
+}
 function deleteWorks() {
   // Get the gallery element from index.html
   const gallery = document.getElementsByClassName("gallery").item(0);
